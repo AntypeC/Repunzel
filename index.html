@@ -1,0 +1,218 @@
+<!doctype html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Repunzel's Hair Dressing Salon</title>
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<link href="fac1.css" rel="stylesheet" type="text/css">
+<link href="css/form.css" rel="stylesheet" type="text/css">
+<link href="css/slider.css" rel="stylesheet" type="text/css">
+<link href="css/backToTop.css" rel="stylesheet" type="text/css">
+
+<!--navbar ccs & js -->
+<link href="css/normalize.css" rel="stylesheet" type="text/css">
+<link href="css/nav.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="respond.min.js"></script>
+<script type="text/javascript" src="js/1.7.2.jquery.min.js"></script>
+
+<!-- FlexSlider -->
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" >
+    var $ = jQuery.noConflict();
+    $(window).load(function() {
+    $('.flexslider').flexslider({
+          animation: "fade"
+    });
+	
+	$(function() {
+		$('.show_menu').click(function(){
+				$('.menu').fadeIn();
+				$('.show_menu').fadeOut();
+				$('.hide_menu').fadeIn();
+		});
+		$('.hide_menu').click(function(){
+				$('.menu').fadeOut();
+				$('.show_menu').fadeIn();
+				$('.hide_menu').fadeOut();
+		});
+	});
+  });
+</script>
+</head>
+<body>
+<div class="header">
+<h1 class="fluid header">Repunzel's Hair Dressing Salon</h1>
+
+</div>
+<div class="gridContainer clearfix"> 
+  
+  <!-- start navbar -->
+  <nav class="clearfix">
+    <ul class="clearfix">
+      <li><a href="#shop">Shop</a></li>
+      <li><a href="#aboutUs">About Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#" id="pull">Menu</a> </nav>
+</div>
+<!-- end navbar --> 
+
+<!-- Start Header Image  -->
+
+<div class="slider_container">
+  <div class="flexslider">
+    <ul class="slides">
+      <li> <a href="#"><img src="img/hair_salon.png" width="1800" alt="Description of Image" ></a> </li>
+    </ul>
+  </div>
+</div>
+<!-- End Header Image  --> 
+
+<!-- Start contentContainer--> 
+
+<!-- Start Montage Image-->
+
+<div id="contentContainer" class="fluid"> <a id="aboutUs"></a>
+  <div id="montage" class="fluid">
+    <div class="fluid montageImage"> <img src="images/example-productsGroup.png"  alt="Description of Image"/> </div>
+    <!-- End Montage Image--> 
+    
+    <!-- Start About Us -->
+    <div class="fluid aboutUs">
+     <img src="img/logo.png"  alt="Description of Image"/>
+      <h1> About Us</h1>
+      <p></p>
+    </div>
+    <!-- End About Us --> 
+    
+  </div>
+  
+  <!-- Start Products-->
+  
+  <div id="colBackGround"> <a id="shop"></a>
+    <h1>Products</h1>
+    <div class="col1"> <img src="img/ceo.jpg"  alt="Description of Image">
+      <h2>Ruzendal the Great, CEO of hair salon</h2>
+      <a href="#">Image Attribution</a><br/>
+      <a href="#">Copyright</a> </div>
+    <div class="col2"> <img src="img/circular0.jpg"  alt="Description of Image">
+      <h2>Ruzendal the Great Junior</h2>
+      <a href="#">Image Attribution</a><br/>
+      <a href="#">Copyright</a> </div>
+    <div class="col3"> <img src="img/circular1.png"  alt="Description of Image">
+      <h2>Ruzendal's razor Pro Max</h2>
+      <a href="#">Image Attribution</a><br/>
+      <a href="#">Copyright</a> </div>
+	  
+	 <div class="col1"> <img src="img/circular2.jpg"  alt="Description of Image">
+      <h2>Ruzendal's razor Ti</h2>
+      <a href="#">Image Attribution</a><br/>
+      <a href="#">Copyright</a> </div>
+    <div class="col2"> <img src="img/circular3.jpg"   alt="Description of Image">
+      <h2>Ruzendal's right arm</h2>
+      <a href="#">Image Attribution</a><br/>
+      <a href="#">Copyright</a> </div>
+    <div class="col3"> <img src="img/circular4.jpg"  alt="Description of Image">
+      <h2>Product Name</h2>
+      <a href="#">Image Attribution</a><br/>
+      <a href="#">Copyright</a> </div>
+	  
+	 <div class="col1"> <img src="img/circular5.jpg"  alt="Description of Image">
+      <h2>Product Name</h2>
+      <a href="#">Image Attribution</a><br/>
+      <a href="#">Copyright</a> </div>
+    <div class="col2"> <img src="img/circular6.jpg"   alt="Description of Image">
+      <h2>Product Name</h2>
+      <a href="#">Image Attribution</a><br/>
+      <a href="#">Copyright</a> </div>
+    <div class="col3"> <img src="img/circular7.jpg"  alt="Description of Image">
+      <h2>Product Name</h2>
+      <a href="#">Image Attribution</a><br/>
+      <a href="#">Copyright</a> </div>
+	  
+	 <div class="col1"> <img src="img/circular8.png"  alt="Description of Image">
+      <h2>Product Name</h2>
+      <a href="#">Image Attribution</a><br/>
+      <a href="#">Copyright</a> </div>
+    <div class="col2"> <img src="img/circular9.jpg"   alt="Description of Image">
+      <h2>Product Name</h2>
+      <a href="#">Image Attribution</a><br/>
+      <a href="#">Copyright</a> </div>
+    <div class="col3"> <img src="img/circular10.jpg"  alt="Description of Image">
+      <h2>Product Name</h2>
+      <a href="#">Image Attribution</a><br/>
+      <a href="#">Copyright</a> </div>
+  </div>
+  <!--End Products-->
+  
+  <div id="contact">
+    <h2>Contact Us</h2>
+    <div class="contactContainer">
+      <input type="text" id="name" name="name" placeholder="Your name..">
+      <input type="text" id="eMail" name="eMail" placeholder="Your eMail Address..">
+      <input type="text" id="number" name="lastname" placeholder="Your Number..">
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
+      <input type="submit" value="Submit">
+    </div>
+  </div>
+</div>
+
+<!-- End contentContainer-->
+
+<footer id="footer" class="fluid">
+  <p>&copy;2016<script>new Date().getFullYear()>2016&&document.write("-"+new Date().getFullYear());</script>, Taylors College.</p>
+</footer>
+
+<!-- End gridContainer --> 
+
+<!--Begin Javascript for Back to Top --> 
+
+<script type="text/javascript">
+// create the back to top button
+$('body').prepend('<a href="#" class="back-to-top">Back to Top</a>');
+
+var amountScrolled = 300;
+
+$(window).scroll(function() {
+	if ($(window).scrollTop() > amountScrolled) {
+		$('a.back-to-top').fadeIn('slow');
+	} else {
+		$('a.back-to-top').fadeOut('slow');
+	}
+});
+
+$('a.back-to-top, a.simple-back-to-top').click(function() {
+	$('html, body').animate({
+		scrollTop: 0
+	}, 'fast');
+	return false;
+});
+</script> 
+<!--End Javascript for Back to Top -->
+</body>
+</html>
