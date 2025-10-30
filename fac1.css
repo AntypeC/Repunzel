@@ -169,7 +169,7 @@ body {
 	border-radius: 50%;
 	display: block;
 	margin: auto;
-	border: 10px solid #000;
+	border: 10px solid #add8e6;
 }
 .col1 h2 {
 	clear: none;
@@ -319,7 +319,7 @@ display: none;
 	margin-left: auto;
 }
 body {
- 	background-color: initial;
+ 	background-color: #debe99;
 }
 #contentContainer {
 	clear: none;
@@ -544,7 +544,7 @@ margin-left: 0;
 	margin-left: auto;
 }
 body {
- background-color: initial;
+ background-color: #debe99;
 }
 #contentContainer {
 	clear: both;
@@ -632,7 +632,7 @@ body {
 	border-radius: 50%;
 	display: block;
 	margin: auto;
-	border: 10px solid #000;
+	border: 10px solid #add8e6;
 }
 .col1 img:hover {
 	opacity: 0.5;
@@ -670,7 +670,7 @@ body {
 	border-radius: 50%;
 	display: block;
 	margin: auto;
-	border: 10px solid #000;
+	border: 10px solid #add8e6;
 }
 .col2 img:hover {
 	opacity: 0.5;
@@ -708,7 +708,7 @@ body {
 	border-radius: 50%;
 	display: block;
 	margin: auto;
-	border: 10px solid #000;
+	border: 10px solid #add8e6;
 }
 .col3 img:hover {
 	opacity: 0.5;
@@ -743,7 +743,7 @@ body {
 }
 #contact h2 {
 	text-align: center;
- 	color: initial;
+ 	color: gold;
 	padding: 0% 10% 0% 0%;
 }
 /* End Contact */
